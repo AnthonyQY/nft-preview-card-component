@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import Card from "../components/Card/Card";
 
 const Home: NextPage = () => {

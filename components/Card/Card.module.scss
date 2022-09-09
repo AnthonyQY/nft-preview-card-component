@@ -1,0 +1,138 @@
+$soft-blue: hsl(215, 51%, 70%);
+$cyan: hsl(178, 100%, 50%);
+$bg-card: hsl(216, 50%, 16%);
+$line: hsl(215, 32%, 27%);
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+
+  background-color: $bg-card;
+  padding: 1.25rem;
+  border-radius: 1rem;
+
+  max-width: 20rem;
+}
+
+.image__wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  &:hover {
+    .overlay {
+      cursor: pointer;
+      opacity: 0.65;
+    }
+  }
+}
+
+.image {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 0.5rem;
+  background-color: $cyan;
+  opacity: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  color: white;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+
+  &:hover {
+    cursor: pointer;
+    color: $cyan;
+  }
+}
+
+.description {
+  color: $soft-blue;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+}
+
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.price {
+  justify-self: start;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: $cyan;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
+}
+
+.time {
+  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  color: $soft-blue;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+}
+
+.break {
+  color: $line;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.author__avatar {
+  max-width: 2rem;
+}
+
+.author__image {
+  width: 100%;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.author__tag {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  color: $soft-blue;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.author__name {
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+    color: $cyan;
+  }
+}
