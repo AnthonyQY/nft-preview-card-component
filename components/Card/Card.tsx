@@ -25,16 +25,20 @@ export default function Card() {
         </p>
         <div className={styles.statistics}>
           <p className={styles.price}>
-            <img src={Ethereum.src} /> 0.041 ETH
+            <img src={Ethereum.src} alt="Ethereum" /> 0.041 ETH
           </p>
           <p className={styles.time}>
-            <img src={Clock.src} />3 days left
+            <img src={Clock.src} alt="Clock" />3 days left
           </p>
         </div>
         <hr className={styles.break} />
         <div className={styles.author}>
           <div className={styles.author__avatar}>
-            <img className={styles.author__image} src={Avatar.src} />
+            <img
+              className={styles.author__image}
+              src={Avatar.src}
+              alt="Jules Wyvern"
+            />
           </div>
 
           <div className={styles.author__tag}>
