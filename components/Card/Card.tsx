@@ -15,7 +15,7 @@ export default function Card() {
           alt="A prismatic cube."
         />
         <div className={styles.overlay}>
-          <img className={styles.view} src={View.src} />
+          <img className={styles.view} src={View.src} alt="View" />
         </div>
       </div>
       <div className={styles.content}>
